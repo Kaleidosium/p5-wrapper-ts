@@ -1,0 +1,40 @@
+{
+  "version": "4",
+  "specifiers": {
+    "npm:@types/node@*": "22.5.4",
+    "npm:@types/p5@^1.7.6": "1.7.6",
+    "npm:p5@^1.11.2": "1.11.2"
+  },
+  "npm": {
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
+    "@types/p5@1.7.6": {
+      "integrity": "sha512-6pLTOo0V3N5jZb5nTwjiv3lPHLK3Z/TjbhQUj8CTWXocUk1Z/f6OHTp3Pcwi1BhWnf5gqKUcyEb1gP0KIJuQgw=="
+    },
+    "p5@1.11.2": {
+      "integrity": "sha512-kvtMTmxJexkbfuaVThg/1JE6iQyS8tTAqGE1UGbfApKUIzDc5hHM23hc08FV3jG0jlNS2En9kqZDb4FrJ8x+kg=="
+    },
+    "undici-types@6.19.8": {
+      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
+    }
+  },
+  "redirects": {
+    "https://unpkg.com/browse/p5js@latest/p5.js/p5.js": "https://unpkg.com/browse/p5js@1.2.18/p5.js/p5.js",
+    "https://unpkg.com/p5js@latest/p5.js/p5.sound.min.js": "https://unpkg.com/p5js@1.2.18/p5.js/p5.sound.min.js"
+  },
+  "remote": {
+    "https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/addons/p5.sound.min.js": "f067ef7cf80b3561327e7b14661ec980fbd34b2baf1e0a9d529a120132ba0107",
+    "https://cdn.jsdelivr.net/npm/p5@latest/lib/addons/p5.sound.min.js": "f067ef7cf80b3561327e7b14661ec980fbd34b2baf1e0a9d529a120132ba0107",
+    "https://unpkg.com/p5js@1.2.18/p5.js/p5.sound.min.js": "f067ef7cf80b3561327e7b14661ec980fbd34b2baf1e0a9d529a120132ba0107"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:@types/p5@^1.7.6",
+      "npm:p5@^1.11.2"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@kaleidosium/p5-wrapper-ts",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": {
+    ".": "./p5-wrapper.ts",
+    "./sound": "./p5.sound-wrapper.ts"
+  },
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable"]
+  },
+  "imports": {
+    "@types/p5": "npm:@types/p5@^1.7.6",
+    "p5": "npm:p5@^1.11.2"
+  }
+}
