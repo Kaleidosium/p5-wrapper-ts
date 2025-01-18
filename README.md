@@ -16,15 +16,15 @@ import { sketch } from "@kaleidosium/p5-wrapper-ts";
 const s = sketch();
 
 s.setup = function () {
-  createCanvas(800, 600);
+  s.createCanvas(800, 600);
 };
 
 s.draw = function () {
-  background(100);
-  fill(255, 0, 0);
-  noStroke();
-  rectMode(CENTER);
-  rect(mouseX, mouseY, 50, 50);
+  s.background(100);
+  s.fill(255, 0, 0);
+  s.noStroke();
+  s.rectMode(CENTER);
+  s.rect(mouseX, mouseY, 50, 50);
 };
 
 s.mousePressed = function () {
@@ -98,12 +98,12 @@ const s = sketch();
 let soundEffect;
 
 s.setup = function () {
-  createCanvas(100, 100);
-  soundEffect = loadSound(mysound);
+  s.createCanvas(100, 100);
+  soundEffect = s.loadSound(mysound);
 };
 
 s.draw = function () {
-  background("#eeeeee");
+  s.background("#eeeeee");
 };
 
 // Play sound on click
