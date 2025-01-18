@@ -5,7 +5,7 @@ A simple TypeScript-compatible wrapper for p5.js. Forked from
 
 ## Installation
 
-`deno add @kaleidosium/p5-wrapper-ts`
+`deno add jsr:@kaleidosium/p5-wrapper-ts`
 
 ## Single sketch usage
 
