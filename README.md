@@ -1,6 +1,7 @@
 # p5.js-wrapper
 
-A simple TypeScript-compatible wrapper for p5.js. Forked from [makinteract/p5js-wrapper](https://github.com/makinteract/p5js-wrapper/).
+A simple TypeScript-compatible wrapper for p5.js. Forked from
+[makinteract/p5js-wrapper](https://github.com/makinteract/p5js-wrapper/).
 
 ## Installation
 
@@ -9,7 +10,7 @@ A simple TypeScript-compatible wrapper for p5.js. Forked from [makinteract/p5js-
 ## Single sketch usage
 
 ```js
-import { sketch } from '@kaleidosium/p5-wrapper-ts';
+import { sketch } from "@kaleidosium/p5-wrapper-ts";
 
 // Initialize a new single sketch
 const s = sketch();
@@ -27,14 +28,14 @@ s.draw = function () {
 };
 
 s.mousePressed = function () {
-  console.log('here');
+  console.log("here");
 };
 ```
 
 ## Multi sketch usage
 
 ```js
-import { p5Instance } from '@kaleidosium/p5-wrapper-ts';
+import { p5Instance } from "@kaleidosium/p5-wrapper-ts";
 
 // Get p5 constructor
 const p5 = p5Instance();
@@ -55,7 +56,7 @@ const sketch1 = new p5((p) => {
     p.rectMode(p.CENTER);
     p.rect(p.mouseX, p.mouseY, 50, 50);
   };
-}, 'one');
+}, "one");
 
 /**
  * Second sketch with a circle following the mouse
@@ -72,22 +73,26 @@ const sketch2 = new p5((p) => {
     p.fill(255);
     p.ellipse(p.mouseX, p.mouseY, 50, 50);
   };
-}, 'two');
+}, "two");
 ```
 
 This sketch assumes that there are two divs available with id 'one' and 'two'.
 
 ## Adding sound
 
-You can add sound (Using the [p5.sound library](https://p5js.org/reference/#/libraries/p5.sound)) but this is currently an experimental and optional feature of this wrapper. You should not encounter any issue with single sketches, but currently multiple sketches might create errors.
+You can add sound (Using the
+[p5.sound library](https://p5js.org/reference/#/libraries/p5.sound)) but this is
+currently an experimental and optional feature of this wrapper. You should not
+encounter any issue with single sketches, but currently multiple sketches might
+create errors.
 
 Here how to use the sound library:
 
 ```js
-import { sketch } from '@kaleidosium/p5-wrapper-ts';
-import '@kaleidosium/p5-wrapper-ts/sound';
+import { sketch } from "@kaleidosium/p5-wrapper-ts";
+import "@kaleidosium/p5-wrapper-ts/sound";
 
-import mysound from './mysound.mp3';
+import mysound from "./mysound.mp3";
 
 const s = sketch();
 let soundEffect;
@@ -98,7 +103,7 @@ s.setup = function () {
 };
 
 s.draw = function () {
-  background('#eeeeee');
+  background("#eeeeee");
 };
 
 // Play sound on click
