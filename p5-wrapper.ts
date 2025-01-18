@@ -1,3 +1,21 @@
+/**
+ * This module contains the main wrapper class for p5.js that provides type-safe access to the p5 environment.
+ *
+ * @example
+ * import { sketch } from "@kaleidosium/p5-wrapper-ts";
+ * 
+ * const s = sketch();
+ * s.setup = () => {
+ *   s.createCanvas(400, 400);
+ * };
+ * s.draw = () => {
+ *   s.background(220);
+ *   s.ellipse(s.width/2, s.height/2, 50, 50);
+ * };
+ *
+ * @module
+ */
+
 // @ts-types="@types/p5/global.d.ts"
 import p5 from "p5";
 import type { p5InstanceExtensions } from "p5/global";
